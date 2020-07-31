@@ -1,0 +1,122 @@
+@font-face{
+  font-family: digi;
+  src: url(font/digital.ttf);
+} 
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+body{
+  min-height: 100vh;
+  background: #050801;
+  font-family: 'MuseoModerno', cursive;
+}
+
+.clock{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  position: relative;
+  font-size: 3rem;
+  font-family: digi;
+
+}
+.hour,.day,.sec,.min{
+  text-align: center;
+  background: #3FA3C9;
+  color: #050801;
+  box-shadow: 0 0 5px #1B3758,
+              0 0 25px #1B3758,
+              0 0 50px #1B3758,
+              0 0 200px #1B3758;
+  -webkit-box-reflect: below -10px linear-gradient(transparent,#0007) ;
+  padding: 10px;
+  
+}
+
+
+.eid-mubarok{
+    position: relative;
+    top: 200px;
+}
+.eid{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+.mubarok{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 50px;
+    
+
+  }
+.box{   
+    position:relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #03e9f4;
+    padding: 15px;
+    margin-left: 10px;
+}
+.box:hover{
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 200px #03e9f4;
+	 -webkit-box-reflect: below 1px linear-gradient(transparent,#0005) ;
+}
+
+
+  
+@media only screen and (max-width: 600px) {
+  .box{
+      width: 10px;
+      height: 10px;
+      
+    }
+  .eid{
+      width:100%;
+      display: flexbox;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+    }
+  .mubarok{
+      width:100%;
+      display: flexbox;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+    }
+.mubarok{
+      padding-bottom: 10px;
+    }
+
+.clock{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: relative;
+    top:5px;
+    font-size: 1rem;
+  }
+
+.eid-mubarok{
+  position: relative;
+  top: -70px;
+  left: 5px;
+}
+
+
+}
