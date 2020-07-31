@@ -21,6 +21,7 @@ body{
 
 }
 .hour,.day,.sec,.min{
+  
   text-align: center;
   background: #3FA3C9;
   color: #050801;
@@ -28,6 +29,7 @@ body{
               0 0 25px #1B3758,
               0 0 50px #1B3758,
               0 0 200px #1B3758;
+              
   -webkit-box-reflect: below -10px linear-gradient(transparent,#0007) ;
   padding: 10px;
   
