@@ -1,15 +1,15 @@
 function countDown() {
 
-  console.log('check');
+  // console.log('check');
   
 var currentTime=new Date().getTime()
 var eventDate=new Date('august 1,2020 00:00:00').getTime()
 
 var realMs=eventDate-currentTime
-console.log(realMs);
+// console.log(realMs);
 
-
-var sec=Math.floor(realMs/1000)
+if(realMs>0){
+  var sec=Math.floor(realMs/1000)
 var min=Math.floor(sec/60)
 var hour=Math.floor(min/60)
 var day=Math.floor(hour/24)
@@ -34,6 +34,18 @@ document.getElementById('sec').innerHTML=sec
 setInterval(() => {
   countDown()
 },1000);
+
+}else{
+  
+  document.getElementById('day').innerHTML='00'
+  document.getElementById('hour').innerHTML='00'
+  document.getElementById('min').innerHTML='00'
+  document.getElementById('sec').innerHTML='00'
+
+}
+
+
+
 
 }
 countDown()
