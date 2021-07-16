@@ -3,7 +3,7 @@ function countDown() {
   // console.log('check');
   
 var currentTime=new Date().getTime()
-var eventDate=new Date('august 1,2020 00:00:00').getTime()
+var eventDate=new Date('august 1,2021 00:00:00').getTime()
 
 var realMs=eventDate-currentTime
 // console.log(realMs);
